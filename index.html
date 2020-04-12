@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
-
+ <link rel="stylesheet" type="text/css" href="http://mumu.tw/aboutme/assets/waifu.css"/>
 </head>
 
 <body id="page-top">
@@ -72,6 +72,7 @@
                     <a href="https://github.com/MuMuShy" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
+                    
                     <a href="https://www.instagram.com/yi_syuan_lin/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
@@ -270,6 +271,15 @@
                 </li>
 
                 <div class="subheading mb-3"><a href="https://mumu.tw/mumu/CantSleep/CantSleeptalkboard.html" target="_blank"><i class="fa fa-link"></i>room link</a></div>
+                
+                <div class="subheading mb-3"><i class="fa fa-star"></i>Face Bird</div>
+                <li>
+                    <i class="fa-li fa fa-check"></i>
+                    利用Face.js追蹤臉部識別,修改經典遊戲"Flappy Bird"為臉部辨識控制
+                </li>
+                
+
+                <div class="subheading mb-3"><a href="https://github.com/MuMuShy/FaceBird" target="_blank"><i class="fa fa-link"></i>GitHub link</a></div>
 
             </div>
 
@@ -277,7 +287,28 @@
 
 
     </div>
-
+<div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+    
+    <script src="http://mumu.tw/aboutme/assets/waifu-tips.js"></script>
+    <script src="http://mumu.tw/aboutme/assets/live2d.js"></script>
+    
+    <script type="text/javascript">
+        live2d_settings['modelId'] = 1;
+        live2d_settings['modelTexturesId'] = 87;
+    	initModel("http://mumu.tw/aboutme/assets/waifu-tips.json")
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -287,5 +318,4 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
 </body></html>
